@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+        tools {
+        // 这里的 'maven-3.6.3' 对应你在 "Global Tool Configuration" 中配置的 Maven 名称
+        maven 'maven 3.9.5'
+    }
+
     environment {
         // 项目相关变量
         PROJECT_NAME = 'jenkins-demo'      // 应用名称
